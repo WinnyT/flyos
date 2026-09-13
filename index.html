@@ -45,8 +45,9 @@
       "background: rgba(255,255,255,0.25);
       padding: 4px 12px;
       border-radius: 9999px;
-      font-weight: 600;">
-      Date
+      font-weight: 600;"
+      id="timeElement">
+        Time
     </span>
   </div>
 
@@ -58,10 +59,22 @@
     }
     setInterval(updateTime, 1000);
   </script>
+
+  <div id="welcome"
+    style="border: solid; display: flex; flex-direction: column; border-radius: 16px; position: absolute; top: calc(50% - 90px); left: calc(50% - 180px); backdrop-filter: blur(4px); background-color: rgba(0, 0, 0, 0.125); ">
+    <div id="welcomeheader"
+      style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
+      <p style="margin: 0px; color: #fff; font-weight: 500">Welcome</p>
+    </div>
+    <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 360px; padding: 16px;">
+      <h1 style="margin: 4px;">FlyOs</h1>
+      <p style="margin: 0px;">
+        FlyOS is a web-based operating system that allows you to run applications and access files directly from your web browser. It provides a user-friendly interface and a variety of features to enhance your online experience.
+      </p>
+    </div>
+  </div>
   
-  <p id="timeElement">
-    Time
-  </p>
+  
     
   </body>
 </html>
