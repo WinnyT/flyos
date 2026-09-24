@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body style = "font-family: 'Times New Roman', Times, serif;
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="
+  font-family: 'Times New Roman', Times, serif;
   height: 100vh;
   background-image: url('/Users/winnytran/Desktop/Developer/HackClub/flyos/world_map.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0px;">
+  margin: 0px;
+">
 
-  <div style = "border: solid;
-  padding: 16px;
-  border-radius: 16px;
-  width: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;">
-
-  <img src="logo.png" alt="Logo" style="position: absolute; top: 20px; left: 20px; width: 100px; height: auto;">
-
-  </div>
 
   <div 
   style="background-color: rgba(0,0,0,0.25);
@@ -33,12 +27,16 @@
   justify-content: space-between;">
 
 
-    <span style= 
-      "background: rgba(255,255,255,0.25);
-      padding: 4px 12px;
-      border-radius: 9999px;
-      font-weight: 600;">
-      FlyOS
+    <span
+  id="flyosMenu"
+  style="
+    background: rgba(255,255,255,0.25);
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    ">
+    FlyOS
     </span>
 
     <span style= 
@@ -66,6 +64,21 @@
       style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
       <p style="margin: 0px; color: #fff; font-weight: 500">Welcome</p>
     </div>
+    <div
+  id="welcomeclose"
+  style="
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ff5f57;
+    border: 1px solid #e0443e;
+    cursor: pointer;
+    z-index: 10;
+  ">
+</div>
     <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 360px; padding: 16px;">
       <h1 style="margin: 4px;">FlyOs</h1>
       <p style="margin: 0px;">
@@ -74,7 +87,31 @@
     </div>
   </div>
   
-  
-    
-  </body>
+
+
+<button
+  id="georgiaOpen"
+  aria-label="Open Georgia"
+  style="
+    position: absolute;
+
+    left: 24.5%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+    z-index: 2;
+  ">
+</button>
+
+<script src="./script.js"></script>
+
+</body>
 </html>
