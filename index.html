@@ -87,6 +87,155 @@
     </div>
   </div>
   
+<div
+  id="californiaWindow"
+  style="
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    border: 3px solid;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.2);
+    z-index: 5;
+  "
+>
+
+  <div
+    id="californiaClose"
+    style="
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ff5f57;
+      cursor: pointer;
+      z-index: 10;
+    ">
+  </div>
+
+  <div
+    id="californiaWindowheader"
+    style="
+      display: flex;
+      justify-content: center;
+      cursor: move;
+      margin-top: 8px;
+    "
+  >
+    <p style="margin: 0; color: white;">
+      California
+    </p>
+  </div>
+
+  <div
+    style="
+      background: white;
+      margin: 6px;
+      padding: 24px;
+      width: 300px;
+      border-radius: 12px;
+      text-align: center;
+    "
+  >
+
+    <h2>🍀 California Lucky Number</h2>
+
+    <div
+      id="californiaNumber"
+      style="
+        font-size: 64px;
+        font-weight: bold;
+        margin: 20px;
+      "
+    >
+      ?
+    </div>
+
+    <button id="generateCaliforniaNumber">
+      Get My Lucky Number
+    </button>
+
+  </div>
+</div>
+
+<div
+  id="texasWindow"
+  style="
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    border: 3px solid;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.2);
+    z-index: 5;
+  "
+>
+
+  <div
+    id="texasClose"
+    style="
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ff5f57;
+      cursor: pointer;
+      z-index: 10;
+    ">
+  </div>
+
+
+  <div
+    id="texasWindowheader"
+    style="
+      display: flex;
+      justify-content: center;
+      cursor: move;
+      margin-top: 8px;
+    "
+  >
+    <p style="margin: 0; color: white;">
+      Texas
+    </p>
+  </div>
+
+
+  <div
+    style="
+      background: white;
+      margin: 6px;
+      padding: 16px;
+      width: 300px;
+      border-radius: 12px;
+      text-align: center;
+    "
+  >
+
+    <h2>🤠 Welcome to Texas</h2>
+
+    <video
+      id="texasVideo"
+      width="100%"
+      controls
+      style="border-radius: 10px;"
+    >
+      <source src="texas.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+
+  </div>
+</div>
+
 
 
 <button
@@ -106,6 +255,42 @@
     border: none;
     background: transparent;
 
+    cursor: pointer;
+    z-index: 2;
+  ">
+</button>
+
+<button
+  id="californiaOpen"
+  aria-label="Open California"
+  style="
+    position: absolute;
+    left: 14.2%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 72px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+  ">
+</button>
+
+<button
+  id="texasOpen"
+  aria-label="Open Texas"
+  style="
+    position: absolute;
+    left: 19.5%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
     cursor: pointer;
     z-index: 2;
   ">
