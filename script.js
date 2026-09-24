@@ -90,6 +90,40 @@ texasClose.addEventListener("click", function() {
 
 dragElement(texasWindow);
 
+var dcWindow =
+  document.querySelector("#dcWindow");
+
+var dcOpen =
+  document.querySelector("#dcOpen");
+
+var dcClose =
+  document.querySelector("#dcClose");
+
+var dcAudio =
+  document.querySelector("#dcAudio");
+
+
+dcOpen.addEventListener("click", function() {
+  openWindow(dcWindow);
+});
+
+
+dcClose.addEventListener("click", function() {
+
+  // Stop the anthem when the window closes
+  dcAudio.pause();
+
+  // Return to beginning
+  dcAudio.currentTime = 0;
+
+  closeWindow(dcWindow);
+});
+
+
+// Make DC window draggable
+dragElement(dcWindow);
+
+
 
 
 // Make the DIV element draggable:

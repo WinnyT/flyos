@@ -82,7 +82,7 @@
     <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 360px; padding: 16px;">
       <h1 style="margin: 4px;">FlyOs</h1>
       <p style="margin: 0px;">
-        FlyOS is a web-based operating system that allows you to run applications and access files directly from your web browser. It provides a user-friendly interface and a variety of features to enhance your online experience.
+        FlyOS is basically a tiny chaotic internet OS where clicking places opens random little apps, games, videos, and surprises. Try out: <b>Texas, California, Washington D.C., and Georgia</b>. Enjoy!
       </p>
     </div>
   </div>
@@ -143,7 +143,7 @@
     "
   >
 
-    <h2>🍀 California Lucky Number</h2>
+    <h2>California Lucky Number</h2>
 
     <div
       id="californiaNumber"
@@ -221,7 +221,7 @@
     "
   >
 
-    <h2>🤠 Welcome to Texas</h2>
+    <h2>Ni Howdy!</h2>
 
     <video
       id="texasVideo"
@@ -232,6 +232,93 @@
       <source src="texas.mp4" type="video/mp4">
       Your browser does not support video.
     </video>
+
+  </div>
+</div>
+
+<div
+  id="dcWindow"
+  style="
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 32%;
+    left: 38%;
+
+    border: 3px solid;
+    border-radius: 16px;
+
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.2);
+
+    z-index: 5;
+  "
+>
+
+  <!-- RED CLOSE BUTTON -->
+  <div
+    id="dcClose"
+    style="
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+      width: 14px;
+      height: 14px;
+
+      border-radius: 50%;
+      background: #ff5f57;
+      border: 1px solid #e0443e;
+
+      cursor: pointer;
+      z-index: 10;
+    ">
+  </div>
+
+
+  <!-- DRAG AREA -->
+  <div
+    id="dcWindowheader"
+    style="
+      display: flex;
+      justify-content: center;
+      cursor: move;
+      margin-top: 8px;
+    "
+  >
+    <p style="margin: 0; color: white;">
+      Washington, D.C.
+    </p>
+  </div>
+
+
+  <!-- CONTENT -->
+  <div
+    style="
+      background: white;
+      margin: 6px;
+      padding: 20px;
+      width: 320px;
+
+      border-radius: 12px;
+      text-align: center;
+    "
+  >
+
+    <h2 style="margin-top: 0;">
+      Washington, D.C.
+    </h2>
+
+    <p>The Star-Spangled Banner</p>
+
+    <audio
+      id="dcAudio"
+      controls
+      style="width: 100%;"
+    >
+      <source src="anthem.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
 
   </div>
 </div>
@@ -291,6 +378,27 @@
     border-radius: 50%;
     border: none;
     background: transparent;
+    cursor: pointer;
+    z-index: 2;
+  ">
+</button>
+
+<button
+  id="dcOpen"
+  aria-label="Open Washington DC"
+  style="
+    position: absolute;
+    left: 26.4%;
+    top: 43.5%;
+    transform: translate(-50%, -50%);
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+
     cursor: pointer;
     z-index: 2;
   ">
